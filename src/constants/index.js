@@ -15,10 +15,6 @@ import {
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
     carrent,
     jobit,
     tripguide,
@@ -27,7 +23,9 @@ import {
     linkedin,
     twitter,
     instagram,
-    github
+    github,
+    softwareDeveloper,
+    softwareDeveloper1
   } from "../assets";
   
   export const navLinks = [
@@ -123,56 +121,31 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "SDE Intern",
+      company_name: "ALLD Technology",
+      icon: softwareDeveloper,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "March 2022 - July 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Collaborated on the development of a data management tool.",
+        "Build a page for clients to add, edit, and delete their data.",
+        "Utilized Redux Toolkit, React, and TypeScript to create a responsive and intuitive userinterface.",
       ],
+      tech : ["ReactJS", "Java","MaterialUI", "TypeScript", "Redux-Toolkit"]
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "Summer Intern",
+      company_name: "HighRadius",
+      icon: softwareDeveloper1,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "Feb 2022 - April 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Built a Full Stack Invoice Management Application",
+        "Made the Machine Learning Model using Python to predict the payment data by the customers",
+        "Made a receivable dashboard using Material UI, React",
+        "Create a Java Servlet to process the data between web and mysql database",
       ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
+      tech : ["Python", "ReactJS", "Java", "mySQL DataBase"],
     },
   ];
   
