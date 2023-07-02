@@ -10,6 +10,8 @@ import twitter from "./twitter.png";
 import instagram from "./instagram.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import softwareDeveloper from "./software-developer-1.png";
+import softwareDeveloper1 from "./software-developer-2.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -66,5 +68,7 @@ export {
   instagram,
   twitter,
   linkedin,
-  leetcode
+  leetcode,
+  softwareDeveloper,
+  softwareDeveloper1
 };
