@@ -12,6 +12,12 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 import softwareDeveloper from "./software-developer-1.png";
 import softwareDeveloper1 from "./software-developer-2.png";
+import java from "./java.png";
+import Firebase from "./FIrebase.png";
+import materialui from "./material-ui.png";
+import bootstrap from "./bootstrap.png";
+import python from "./python.png";
+import dsa from "./dsa.png"
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -70,5 +76,11 @@ export {
   linkedin,
   leetcode,
   softwareDeveloper,
-  softwareDeveloper1
+  softwareDeveloper1,
+  java,
+  Firebase,
+  materialui,
+  bootstrap,
+  python,
+  dsa
 };

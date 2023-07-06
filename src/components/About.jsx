@@ -10,7 +10,7 @@ const LinkCard = ({title, image , link, index}) => {
     <Tilt className="xs:w-[40px] w-full">
       <motion.div  variants={fadeIn("right", "spring", index * 0.5, 0.75)} className='w-full rounded-full cursor-pointer' onClick={() => window.open(link, "_blank")}>
         <img src={image}/>
-      </motion.div>
+      </motion.div> 
     </Tilt>
   )
 

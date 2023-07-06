@@ -10,22 +10,24 @@ import {
     reactjs,
     redux,
     tailwind,
-    nodejs,
-    mongodb,
     git,
     figma,
-    docker,
     carrent,
     jobit,
     tripguide,
-    threejs,
     leetcode,
     linkedin,
     twitter,
     instagram,
     github,
     softwareDeveloper,
-    softwareDeveloper1
+    softwareDeveloper1,
+    java,
+    Firebase,
+    materialui,
+    bootstrap,
+    python,
+    dsa
   } from "../assets";
   
   export const navLinks = [
@@ -66,57 +68,83 @@ import {
   
   const technologies = [
     {
-      name: "HTML 5",
-      icon: html,
+      name: "Java",
+      icon: java,
+      years : 3,
     },
     {
-      name: "CSS 3",
-      icon: css,
+      name: "Python",
+      icon: python,
+      years : 4,
     },
     {
       name: "JavaScript",
       icon: javascript,
+      years : 3,
     },
     {
-      name: "TypeScript",
+      name: "DSA",
+      icon: dsa,
+      years : 4,
+    },
+    {
+      name: "Typescript",
       icon: typescript,
+      years : 1,
+    },
+    {
+      name: "HTML",
+      icon: html,
+      years : 4,
+    },
+    {
+      name: "CSS3",
+      icon: css,
+      years : 4,
     },
     {
       name: "React JS",
       icon: reactjs,
+      years : 3,
     },
     {
       name: "Redux Toolkit",
       icon: redux,
+      years : 2,
     },
     {
       name: "Tailwind CSS",
       icon: tailwind,
+      years : 2,
     },
     {
-      name: "Node JS",
-      icon: nodejs,
+      name: "Material UI",
+      icon: materialui,
+      years : 3,
     },
     {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
+      name: "Bootstrap",
+      icon: bootstrap,
+      years : 4,
     },
     {
       name: "git",
       icon: git,
+      years : 4,
     },
+    {
+      name: "Github",
+      icon: github,
+      years : 4,
+    },
+
     {
       name: "figma",
       icon: figma,
+      years : 4,
     },
-    {
-      name: "docker",
-      icon: docker,
-    },
+ 
+
   ];
   
   const experiences = [
