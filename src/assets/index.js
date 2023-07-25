@@ -18,6 +18,8 @@ import materialui from "./material-ui.png";
 import bootstrap from "./bootstrap.png";
 import python from "./python.png";
 import dsa from "./dsa.png"
+import gannaCover from "./ganna-cover-img.png";
+import airbnbCover from "./airbnb-cover-img.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -82,5 +84,8 @@ export {
   materialui,
   bootstrap,
   python,
-  dsa
+  dsa,
+  gannaCover,
+  airbnbCover,
+  
 };
