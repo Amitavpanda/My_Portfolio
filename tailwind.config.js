@@ -13,15 +13,15 @@ export default {
         "white-100": "#f3f3f3",
         green : "#00cc66",
         red : "#ff8566",
+        black: {
+          30: 'rgba(0,0,0,0.5)',
+        }
       },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",
       },
       screens: {
         xs: "450px",
-      },
-      backgroundImage: {
-        "hero-pattern": "url('/src/assets/herobg.png')",
       },
     },
   },

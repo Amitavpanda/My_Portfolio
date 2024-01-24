@@ -1,48 +1,71 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import {styles} from "../styles";
+import { styles } from "../styles";
 import { navLinks } from '../constants';
-import {logo, close, menu} from "../assets"
+import { motion } from 'framer-motion';
+import { logo, close, menu } from "../assets";
+
+
+
 function Navbar() {
   const [active, setActive] = useState('');
-  const [toggle , setToggle] = useState(false);
+  const [toggle, setToggle] = useState(false);
+  const [hovered, setHovered] = useState('');
+
+
   return (
-    <nav className={`${styles.paddingX} w-full flex items-center  fixed top-0 z-20` }>
-      <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
-        <Link to="/" className='flex items-center ' onClick={() => {
+    <nav className={`${styles.paddingX} max-w-max flex items-center rounded-3xl fixed bottom-9 z-20 bg-black-30 bg-opacity-70 backdrop-filter backdrop-blur-lg shadow-lg glow-shadow left-1/2 transform -translate-x-1/2 p-3`}>
+
+      <ul className='list-none flex flex-row gap-5 items-center '>
+        <Link to='/' className='flex items-center' onClick={() => {
           setActive('');
-          window.scrollTo(0,0);
+          window.scrollTo(0, 0);
         }}>
-          <img src={logo} className=' w-20 h-20 object-contain'/>
-          <p className='text-white text-[18px] font-bold cursor-pointer'>Amitav Panda</p>
+
 
         </Link>
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
-          {navLinks.map((nav) => (
-            <>
-              <li className={`${active === nav.title ? 'text:white': 'text-secondary'} hover:text-white text-[18px] font-medium cursor-pointer`} onClick={() => {
-                setActive(nav.title)
-              }}><a href={`#${nav.id}`}>{nav.title}</a></li>
-            </>
-          ))}
-        </ul>
+        {navLinks.map((nav) => (
+          <>
+            <motion.li key={nav.id}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 1.7 }}
+              animate={active === nav.id ? { scale: 1.8, zIndex: 1 } : {}}
+              className={`text-white text-[1.2rem] ${active === nav.id ? 'active' : ''}`} onClick={() => { setActive(nav.id) }}>
+              {nav.id === 'home' ? (
+                <Link to='/' onClick={() => {
+                  setActive('');
+                  window.scrollTo(0, 0);
+                }} className='p-[3rem]'>
+                  {React.createElement(nav.logo)}
+                </Link>
+              ) : (<motion.a
+                href={`#${nav.id}`}
+                className='p-[1rem] flex flex-col items-center gap-3'
+                whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
+                onClick={() => { setActive(active === nav.id ? '' : nav.id); }}
+                onMouseEnter={() => setHovered(nav.id)}
+                onMouseLeave={() => setHovered('')}
+              >
+                {React.createElement(nav.logo)}
+                {hovered === nav.id && (
+                  <motion.span
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 20 }}
+                    transition={{ duration: 0.3 }}
+                    className="text-sm ml-1"
+                  >
+                    {nav?.title}
+                  </motion.span>
+                )}
+              </motion.a>
+              )}
+            </motion.li>
+          </>
+        ))}
 
-        <div className='sm:hidden flex flex-1 justify-end items-center'>
-          <img src={toggle ? close : menu} className='w-[30px] h-[30px] object-contain' onClick={() => setToggle(!toggle)}/>
-          <div className={`${!toggle ? 'hidden' : 'flex'} p-6 black-gradient absolute top-20 right-0 mx-5 my-2 min-w-[148px] z-10 rounded-xl`}>
-          <ul className='list-none flex flex-col justify-end items-start flex-1 gap-4'>
-          {navLinks.map((nav) => (
-            <>
-              <li className={`${active === nav.title ? 'text:white': 'text-secondary'} hover:text-white text-[18px] font-medium cursor-pointer`} onClick={() => {
-                setActive(nav.title);
-                setToggle(!toggle);
-              }}><a href={`#${nav.id}`}>{nav.title}</a></li>
-            </>
-          ))}
-        </ul>
-          </div>
-        </div>
-      </div>
+
+      </ul>
     </nav>
   )
 }
