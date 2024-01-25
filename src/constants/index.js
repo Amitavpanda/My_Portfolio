@@ -15,7 +15,6 @@ import {
   carrent,
   jobit,
   tripguide,
-  leetcode,
   linkedin,
   twitter,
   instagram,
@@ -122,7 +121,11 @@ const services = [
   },
 ];
 
-const links = [{ title: "LinkedIn", image: linkedin, link: "https://www.linkedin.com/in/amitav-panda-633a001b6/" }, { title: "Github", image: github, link: "https://github.com/Amitavpanda" }, { title: "Instagram", image: instagram, link: "https://lnkd.in/gn2GMWG5" }, { title: "LeetCode", image: leetcode, link: "https://leetcode.com/amitavpanda/" }, { title: "Twitter", image: twitter, link: "https://twitter.com/AmitavPanda99" }]
+const links = [
+  { title: "LinkedIn", image: linkedin, link: "https://www.linkedin.com/in/amitav-panda-633a001b6/" },
+  { title: "Github", image: github, link: "https://github.com/Amitavpanda" },
+  { title: "Instagram", image: instagram, link: "https://lnkd.in/gn2GMWG5" },
+  { title: "Twitter", image: twitter, link: "https://twitter.com/AmitavPanda99" }]
 
 const technologies = [
   {

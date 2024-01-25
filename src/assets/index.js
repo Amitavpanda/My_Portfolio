@@ -43,7 +43,7 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
-
+import myPic from "./myPic.png";
 export {
   logo,
   backend,
@@ -87,5 +87,5 @@ export {
   dsa,
   gannaCover,
   airbnbCover,
-  
+  myPic  
 };

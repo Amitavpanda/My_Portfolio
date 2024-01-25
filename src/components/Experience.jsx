@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import { motion } from 'framer-motion';
 import "react-vertical-timeline-component/style.min.css";
@@ -66,7 +66,7 @@ const ExperienceCard = ({ title, points, date, iconBg, icon, company_name , tech
 const Experience = () => {
   return (
   <>
-  <motion.div variants={textVariant()}>
+  <motion.div id="experience" variants={textVariant()}>
       <h2 className={`${styles.sectionHeadText}`}>Work Experience</h2>
   </motion.div>
 
