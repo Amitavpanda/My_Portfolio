@@ -27,7 +27,7 @@ const Skill = ({name ,icon,index,years}) => {
 const Tech = () => {
   return (
     <>
-    <motion.div variants={textVariant()}>
+    <motion.div variants={textVariant()} id="skills">
       <h2 className={`${styles.sectionHeadText}`}>Skills</h2>
       <p className={styles.sectionSubText}>Hover over a skill to know my experience</p>
     </motion.div>
