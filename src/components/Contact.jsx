@@ -13,9 +13,6 @@ import ContactImg from "../assets/Contact_img.jpg";
 
 
 const Contact = () => {
-
-
-  console.log( import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY, "sdjfa")
   const formRef = useRef();
   const [form, setForm] = useState({
     name : '',
