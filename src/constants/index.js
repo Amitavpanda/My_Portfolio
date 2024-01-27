@@ -29,6 +29,9 @@ import {
   dsa,
   gannaCover,
   airbnbCover,
+  content,
+  webapp,
+  writing
 } from "../assets";
 import { IoCallSharp } from "react-icons/io5";
 import { BiLogoGmail } from "react-icons/bi";
@@ -40,6 +43,7 @@ import { GiSkills } from "react-icons/gi";
 import { FaCircleInfo } from "react-icons/fa6";
 import { RiServiceFill } from "react-icons/ri";
 import { IoHappySharp } from "react-icons/io5";
+
 
 
 
@@ -104,21 +108,39 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
+    id: "fullStack",
+    title: "Full Stack Developer",
+    icon: webapp,
+    points: [
+      "I build full stack web app from scratch to deployment",
+      "Using my industry experience, I will deliver the web app according to indstry best practices such as code structure, performance optimisations etc.",
+      "I listen closely to your needs and deliver tailored solutions, learned through my work experience.",
+      "Check out my GitHub to see examples of my work and how I structure my code.",
+      "My tech stack includes React, Nextjs, tailwind css, bootstrap, Expressjs , Typescript, Mongodb, Oracle DB, Java, Python, Framer Motion. Github Actions.",
+
+    ]
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
+    id: "technicalArticle",
+    title: "Technical Article Writing",
+    icon: writing,
+    points: [
+      "I explain technical topics in simple language, breaking down complex ideas.",
+      " I ensure accuracy and provide valuable insights through detailed research.",
+      "I make sure articles rank well on search engines by using relevant keywords.",
+
+
+    ]
   },
   {
-    title: "Backend Developer",
-    icon: backend,
+    id: "contentCreation",
+    title: "Content Creation",
+    icon: content,
+    points: [
+      "I understand each social media platform's nuances and what content works best.",
+      "Well versed with AI tools like ChatGPT and Bing Image Creator to make content more attractive and engaging.",]
   },
-  {
-    title: "Content Creator",
-    icon: creator,
-  },
+  
 ];
 
 const links = [
