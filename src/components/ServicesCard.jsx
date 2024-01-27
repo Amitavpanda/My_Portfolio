@@ -8,7 +8,6 @@ import { zoomIn } from '../utils/motion'
 
 function ServicesCard({service}) {
   return (
-
     <motion.div
     key={service?.id}
     className='bg-tertiary p-5 py-10 rounded-2xl sm:w-[360px] w-full relative flex flex-col items-center '

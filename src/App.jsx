@@ -7,8 +7,8 @@ import Testimonials from './components/Testimonials';
 function App() {
   return (
     <BrowserRouter>
-      <div className='z-0 bg-primary'>
-        <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
+      <div className='z-0 bg-primary overflow-x-hidden'>
+        <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center max-w-screen-lg'>
           <Navbar />
         </div>
         <Hero />

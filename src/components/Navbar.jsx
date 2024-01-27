@@ -14,9 +14,9 @@ function Navbar() {
 
 
   return (
-    <nav className={`${styles.paddingX} max-w-max flex items-center rounded-3xl fixed bottom-9 z-20 bg-black-30 bg-opacity-70 backdrop-filter backdrop-blur-lg shadow-lg glow-shadow left-1/2 transform -translate-x-1/2 p-3`}>
+    <nav className={`${styles.paddingX} max-w-sm  sm:max-w-max flex items-center rounded-3xl fixed bottom-9 z-20 bg-black-30 bg-opacity-70 backdrop-filter backdrop-blur-lg shadow-lg glow-shadow left-1/2 transform -translate-x-1/2 p-3`}>
 
-      <ul className='list-none flex flex-row gap-5 items-center '>
+      <ul className='list-none flex flex-row gap-2 sm:gap-5 items-center '>
         <Link to='/' className='flex items-center' onClick={() => {
           setActive('');
           window.scrollTo(0, 0);
@@ -35,12 +35,12 @@ function Navbar() {
                 <Link to='/' onClick={() => {
                   setActive('');
                   window.scrollTo(0, 0);
-                }} className='p-[3rem]'>
+                }} className=' p-[0.25rem] sm:p-[3rem]'>
                   {React.createElement(nav.logo)}
                 </Link>
               ) : (<motion.a
                 href={`#${nav.id}`}
-                className='p-[1rem] flex flex-col items-center gap-3'
+                className=' p-[0.25rem] sm:p-[1rem] flex flex-col items-center gap-3'
                 whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
                 onClick={() => { setActive(active === nav.id ? '' : nav.id); }}
                 onMouseEnter={() => setHovered(nav.id)}
@@ -53,7 +53,7 @@ function Navbar() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 20 }}
                     transition={{ duration: 0.3 }}
-                    className="text-sm ml-1"
+                    className=" text-[10px] sm:text-sm ml-1"
                   >
                     {nav?.title}
                   </motion.span>

@@ -11,11 +11,11 @@ const Skill = ({name ,icon,index,years}) => {
     <>
     <Tilt className=" p-3 w-full">
       <motion.div  variants={fadeIn("right", "spring", index * 0.5, 0.75)} className=' group relative flex cursor-pointer' >
-        <img src={icon} className="rounded-full border p-4 border-gray-500 object-cover w-24 h-24 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out  "/>
-        <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white w-24 h-24 xl:w-32 xl:h-32 rounded-full ">
+        <img src={icon} className="rounded-full border p-4 border-gray-500 object-cover w-32 h-20 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out  "/>
+        <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white w-20 h-20 xl:w-32 xl:h-32 rounded-full ">
         <div className="flex flex-col items-center justify-center h-full">
-          <p className="text-[15px] text-[#915EFF] font-bold opacity-100">{name}</p>
-          <p className="text-3xl  text-[#915EFF] font-bold opacity-100">{years}</p>
+          <p className="text-[10px] text-[15px] text-[#915EFF] font-bold opacity-100">{name}</p>
+          <p className="text-xl  text-3xl text-[#915EFF] font-bold opacity-100">{years}</p>
         </div>
       </div>
       </motion.div> 

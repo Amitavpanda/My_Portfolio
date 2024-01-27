@@ -15,7 +15,7 @@ const LinkCard = ({ title, image, link, index }) => {
   return (
     <Tilt className="xs:w-[40px] w-full">
       <motion.div variants={fadeIn("right", "spring", index * 0.5, 0.75)} className='w-full rounded-full cursor-pointer' onClick={() => window.open(link, "_blank")}>
-        <img src={image} />
+        <img src={image} className='w-[3rem] h-[3rem] sm:w-[6rem] sm:h-[3rem]'/>
       </motion.div>
     </Tilt>
   )
@@ -53,7 +53,7 @@ const Hero = () => {
         </div>
 
         <div>
-          <img src={myPic} alt='my Profile Pic' width={500} height={500}/>
+          <img src={myPic} alt='my Profile Pic' width={500} height={500} />
         </div>
 
       </div>
