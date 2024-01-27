@@ -44,6 +44,9 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import myPic from "./myPic.png";
+import writing from "./writing.png";
+import content from "./content.png";
+import webapp from "./webapp.png";
 export {
   logo,
   backend,
@@ -87,5 +90,8 @@ export {
   dsa,
   gannaCover,
   airbnbCover,
-  myPic  
+  myPic ,
+  writing,
+  content,
+  webapp
 };
