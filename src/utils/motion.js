@@ -7,7 +7,7 @@ export const textVariant = (delay) => {
       show: {
         y: 0,
         opacity: 1,
-        transition: {
+        transition: { 
           type: "spring",
           duration: 1.25,
           delay: delay,

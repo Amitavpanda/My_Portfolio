@@ -47,6 +47,11 @@ import myPic from "./myPic.png";
 import writing from "./writing.png";
 import content from "./content.png";
 import webapp from "./webapp.png";
+import EventManagementCover from "./EventManagementCover.png";
+import MyPortfolio from "./myPortfolio.png";
+import NextJs from "./nextjs.png";
+import OracleDB from "./oracle-db.png";
+
 export {
   logo,
   backend,
@@ -57,7 +62,6 @@ export {
   menu,
   close,
   css,
-  docker,
   figma,
   git,
   html,
@@ -93,5 +97,10 @@ export {
   myPic ,
   writing,
   content,
-  webapp
+  webapp,
+  EventManagementCover,
+  MyPortfolio,
+  docker,
+  NextJs,
+  OracleDB
 };
