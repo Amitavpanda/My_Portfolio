@@ -28,10 +28,15 @@ import {
   python,
   dsa,
   gannaCover,
-  airbnbCover,
   content,
   webapp,
-  writing
+  writing,
+  EventManagementCover,
+  MyPortfolio,
+  NextJs,
+  docker,
+  mongodb,
+  OracleDB
 } from "../assets";
 import { IoCallSharp } from "react-icons/io5";
 import { BiLogoGmail } from "react-icons/bi";
@@ -106,6 +111,42 @@ export const navLinks = [
 
 ];
 
+
+const introduction = [
+  {
+    overview: [
+      "Hi, Myself a Skilled Software Engineer with more than 2 years of Industry experience and skilled in variety of coding languages and frameworks. I can build full stack performant web apps everything from scratch.",
+      "With the industry experience I gained in these years enable me to write clean and secure code.  I have experience in frontend development and Backend microservices Architecture." ,
+      "I have encountered a diverse range of technologies and frameworks which allow me to quickly learn and master new technologies and tools as per the requirement. ",
+      "My Tech Stack and Experience include:",
+    ],
+
+    bulletPoints : [
+      {
+        title: 'Frontend',
+        skills: ["React", "JavaScript", "Next.js", "Tailwind CSS", "Bootstrap", "Redux Toolkit", "Material UI"],
+      },
+      { 
+        title: 'Backend',
+        skills: ["Java", "Node.js"],
+
+      },
+      { 
+        title: 'Database',
+        skills: ["MongoDB", "Oracle DB", "Firebase"],
+
+      },
+
+      {
+        title: 'Tools',
+        skills: ["Linux", "Postman", "Visual Studio Code", "IntellIJ", "Git"]
+
+      }
+
+    ]
+  }
+]
+
 const services = [
   {
     id: "fullStack",
@@ -140,7 +181,7 @@ const services = [
       "I understand each social media platform's nuances and what content works best.",
       "Well versed with AI tools like ChatGPT and Bing Image Creator to make content more attractive and engaging.",]
   },
-  
+
 ];
 
 const links = [
@@ -150,40 +191,36 @@ const links = [
   { title: "Twitter", image: twitter, link: "https://twitter.com/AmitavPanda99" }]
 
 const technologies = [
-  {
-    name: "Java",
-    icon: java,
-    years: 3,
-  },
-  {
-    name: "Python",
-    icon: python,
-    years: 4,
-  },
+
   {
     name: "JavaScript",
     icon: javascript,
-    years: 3,
-  },
-  {
-    name: "DSA",
-    icon: dsa,
     years: 4,
   },
   {
     name: "Typescript",
     icon: typescript,
+    years: 2,
+  },
+  {
+    name: "NextJs",
+    icon: NextJs,
     years: 1,
   },
   {
-    name: "HTML",
-    icon: html,
-    years: 4,
+    name: "Docker",
+    icon: docker,
+    years: 1,
   },
   {
-    name: "CSS3",
-    icon: css,
-    years: 4,
+    name: "Mongodb",
+    icon: mongodb,
+    years: 2,
+  },
+  {
+    name: "OracleDB",
+    icon: OracleDB,
+    years: 1,
   },
   {
     name: "React JS",
@@ -195,21 +232,44 @@ const technologies = [
     icon: redux,
     years: 2,
   },
+
   {
     name: "Tailwind CSS",
     icon: tailwind,
-    years: 2,
+    years: 3,
+  },
+  {
+    name: "Java",
+    icon: java,
+    years: 4,
+  },
+  {
+    name: "Python",
+    icon: python,
+    years: 4,
   },
   {
     name: "Material UI",
     icon: materialui,
-    years: 3,
+    years: 4,
   },
   {
     name: "Bootstrap",
     icon: bootstrap,
     years: 4,
   },
+
+  {
+    name: "HTML",
+    icon: html,
+    years: 5,
+  },
+  {
+    name: "CSS3",
+    icon: css,
+    years: 5,
+  },
+
   {
     name: "git",
     icon: git,
@@ -232,18 +292,35 @@ const technologies = [
 
 const experiences = [
   {
-    title: "SDE Intern",
-    company_name: "ALLD Technology",
+    title: "Product Development Engineer",
+    company_name: "COMVIVA",
     icon: softwareDeveloper,
     iconBg: "#383E56",
     date: "March 2022 - July 2022",
     points: [
-      "Collaborated on the development of a data management tool.",
-      "Build a page for clients to add, edit, and delete their data.",
-      "Utilized Redux Toolkit, React, and TypeScript to create a responsive and intuitive userinterface.",
+      "Contributing to the microservice architecture of a dynamic banking application.",
+      "Resolved critical production-level issues reported by clients through thorough analysis of logs and extensive examination of the codebase which improved my problem solving skills drastically",
+      "Upon identifying the issue, I provide a detailed Root Cause Analysis (RCA) and proceed to implement the necessary fixes. Additionally, I document each fix comprehensively in Confluence to maintain a record of the changes made.",
+      "Whether it's adding new features, optimizing existing functionalities, or enhancing performance, I ensure that the changes are seamlessly integrated into the microservices architecture while maintaining high standards of code quality and security.",
     ],
-    tech: ["ReactJS", "Java", "MaterialUI", "TypeScript", "Redux-Toolkit"]
+    tech: ["Spring Boot", "Kafka", "Oracle Database", "Docker", "Grafana", "Linux",]
   },
+  {
+    title: "Software Development Engineer Intern",
+    company_name: "ALLD TECHNOLOGY",
+    icon: softwareDeveloper1,
+    iconBg: "#E6DEDD",
+    date: "March 2022 – July 2022`",
+    points: [
+      "Collaborated on the development of a data management tool.",
+      "Built a user-friendly dashboard for a client. Created functional features like a paginated orders table and a searchable employees table.",
+      "Used React library to craft attractive and informative graphs for better data visualization. Integrated an editor component to improve userinteraction within the dashboard.",
+      "Utilized Redux Toolkit, React, and TypeScript to create a responsive and intuitive userinterface.",
+
+    ],
+    tech: ["ReactJS", "Redux Toolkit", "Tailwind CSS", "RTK Query", "TypeScript"],
+  },
+
   {
     title: "Summer Intern",
     company_name: "HighRadius",
@@ -260,13 +337,32 @@ const experiences = [
   },
 ];
 
+const works = [
+  {
+    title: "My Work",
+    subtitle: "Projects",
+    description: ["Following projects serve as compelling examples of my skills and experience. Through the provided links to code repositories and live demos, you can witness firsthand my ability to solve complex problems and deliver high-quality solutions.",
+      "I have encountered a diverse range of technologies and frameworks, which has equipped me with the adaptability to quickly learn and master new tools. This proficiency allows me to effectively work with different technologies and seamlessly integrate them into projects.",
+      "In each project, I prioritize writing clean, secure, and performant code with good file structure and architecture.",
+      "This approach will help me become a good software engineer and delivering quality work in long run."],
 
+  },
+]
 
 
 const projects = [
+
+
   {
     name: "Ganna Suno",
-    description: "A music player web app using React, Redux Toolkit, and Firebase. Utilized RTK Query and Rapid API to fetch song details and related artist information. Implemented user authentication, allowing users to sign in with Google and email/password. Created a seamless user experience by enabling users to view song details, play songs, and like them.",
+
+    description: [
+      "A music player web app using React, Redux Toolkit and Firebase. Utilized RTK Query and Rapid API to fetch song details and related artist information.",
+      "Implemented user authentication, allowing users to sign in with Google and email/password.",
+      "Created a seamless user experience by enabling users to view song details, play songs, and like them.",
+      "Will be adding some new unique features which will add some value to the audience and need to fix some bugs and security issues."
+    ],
+
     tags: [
       {
         name: "reactjs",
@@ -298,29 +394,81 @@ const projects = [
   },
 
   {
-    name: "Airbnb Clone",
-    description:
-      "Developed a front-end Airbnb clone using React and Material-UI. Deployed the project on Firebase.",
+    name: "Event Management Web App",
+    description: [
+      "There is a requirement from a client to build a Full Stack Event Management Web app for his business.",
+      "The web app allows users to view the services offered by the event management group, book events, and visualize how their events may look through images.",
+      "I handled everything from designing to development to deployment.",
+      "I maintained clean and secure code in both the frontend and backend, implementing form validation using Zod to enhance data integrity and security.",
+      "Will Fix Bugs if raised by client"
+    ],
+
     tags: [
       {
-        name: "reactjs",
+        name: "Nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "material ui",
+        name: "Tailwind CSS",
         color: "green-text-gradient",
       },
       {
-        name: "firebase",
+        name: "Framer Motion",
         color: "pink-text-gradient",
       },
+      {
+        name: "Mongo DB",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Shadcn ui",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Express JS",
+        color: "blue-text-gradient",
+      },
+
     ],
-    image: airbnbCover,
-    source_code_link: "https://github.com/Amitavpanda/Airbnb_clone_ReactJS",
+
+    image: EventManagementCover,
+    source_code_link: "https://github.com/Amitavpanda/EventManagementWebApp",
     status: true,
-    web_link: "https://clone-air-11616.web.app/"
+    web_link: "https://shubamangalam.vercel.app/"
 
   },
+
+  {
+    name: "My Portfolio Web App",
+    description: [
+      "My portfolio, built using React, Tailwind CSS, and Framer Motion, boasts an outstanding UI.It showcases my skills, experience, services, projects, and features a contact form for easy communication.",
+      "I've made a conscious effort to adhere to clean code principles and maintain a structured folder organization in line with industry standards.",
+      "Additionally, Will be doing future updates and improvements based on my evolving requirements."
+    ],
+
+    tags: [
+      {
+        name: "ReactJs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Framer Motion",
+        color: "pink-text-gradient",
+      },
+
+    ],
+
+    image: MyPortfolio,
+    source_code_link: "https://github.com/Amitavpanda/My_Portfolio",
+    status: true,
+    web_link: "https://my-portfolio-amitav.vercel.app/"
+  },
+
+
 ];
 
 const contact = [
@@ -334,4 +482,4 @@ const contact = [
   }
 ]
 
-export { services, technologies, experiences, projects, links, contact };
+export { services, technologies, experiences, projects, links, contact, introduction, works };

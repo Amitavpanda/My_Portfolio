@@ -9,13 +9,15 @@ import { fadeIn } from '../utils/motion';
 import { links } from '../constants';
 import { Tilt } from 'react-tilt';
 import { myPic } from '../assets';
+import { introduction } from "../constants/index";
+import { GiBulletBill } from "react-icons/gi";
 
 
 const LinkCard = ({ title, image, link, index }) => {
   return (
     <Tilt className="xs:w-[40px] w-full">
       <motion.div variants={fadeIn("right", "spring", index * 0.5, 0.75)} className='w-full rounded-full cursor-pointer' onClick={() => window.open(link, "_blank")}>
-        <img src={image} className='w-[3rem] h-[3rem] sm:w-[6rem] sm:h-[3rem]'/>
+        <img src={image} className='w-[3rem] h-[3rem] sm:w-[6rem] sm:h-[3rem]' />
       </motion.div>
     </Tilt>
   )
@@ -37,11 +39,41 @@ const Hero = () => {
             <p className={styles.sectionSubText}>Introduction</p>
             <h2 className={styles.sectionHeadText}>Overview</h2>
           </motion.div>
+          {introduction.map((item) => (
+            <>
+              {item.overview.map((description) => (
+                <>
+                  <motion.p variants={fadeIn('', '', 0.1, 1)} className='mt-5 text-secondary text-[15px] max-w-3xl leading-[30px]'>
+                    {description}
+                  </motion.p>
+                </>
+              ))}
 
-          <motion.p variants={fadeIn('', '', 0.1, 1)} className='mt-2i text-secondary text-[15px] max-w-3xl leading-[30px]'>
-            I am a Skilled Software Developer with experience coding in a variety of languages and frameworks, including Python, Java, JavaScript, React, Firebase, Redux, and CSS frameworks such as Bootstrap, Material UI, and Tailwind CSS. Additionally, I possess understanding of data structures and algorithms.
-            I am confident in my ability to contribute effectively to your projects and meet your desired requirements.
-          </motion.p>
+              {
+                item.bulletPoints.map((bulletPoint) => (
+                  <>
+
+                    <div className='flex flex-row items-center gap-5 py-3'>
+                      <GiBulletBill className='text-[#915EFF]' />
+                      <p className='text-white text-[15px]'>{bulletPoint.title}</p>
+
+                    </div>
+
+                    <div className='flex flex-row flex-wrap gap-3 px-10'>
+                      {bulletPoint.skills.map((skill) => (
+                        <p className='text-secondary text-wrap'>{skill}</p>
+                      ))}
+                    </div>
+
+                  </>
+                ))
+              }
+
+            </>
+          ))}
+
+
+
 
           <div className='mt-5 flex flex-row gap-4'>
             {links.map((link, index) => (
