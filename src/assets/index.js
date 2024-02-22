@@ -18,7 +18,7 @@ import materialui from "./material-ui.png";
 import bootstrap from "./bootstrap.png";
 import python from "./python.png";
 import dsa from "./dsa.png"
-import gannaCover from "./ganna-cover-img.png";
+import gannaCover from "./gannaCover.png";
 import airbnbCover from "./airbnb-cover-img.png";
 
 import css from "./tech/css.png";
