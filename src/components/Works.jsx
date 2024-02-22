@@ -66,23 +66,25 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
 const Works = () => {
   return (
     <>
-      {works.map((work) => (
-        <>
-          <motion.div variants={textVariant()} id="work">
-            <p className={styles.sectionSubText}>{work.title}</p>
-            <h2 className={styles.sectionHeadText}>{work.subtitle}</h2>
-          </motion.div>
+      <motion.div variants={textVariant()} id="work">
+        <p className={styles.sectionSubText}>My Work</p>
+        <h2 className={styles.sectionHeadText}>Projects</h2>
+      </motion.div>
 
-          {work.description.map((point) => (
-            <div className="w-full flex-col gap-y-2 py-2">
-              <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
-                {point}
-              </motion.p>
-            </div>
-          ))}
-        </>
 
-      ))}
+      <div className="w-full flex-col gap-y-2 py-2">
+        <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
+          Following project serve as compelling examples of my skills and experience. Through the provided links to code repositories and live demos, you can witness firsthand my ability to solve complex problems and deliver high-quality solutions.
+
+          I have encountered a diverse range of technologies and frameworks, which has equipped me with the adaptability to quickly learn and master new tools. This proficiency allows me to effectively work with different technologies and seamlessly integrate them into projects.
+
+          In each project, I prioritize writing clean, secure, and performant code with good file structure and architecture.
+
+          This approach will help me become a good software engineer and delivering quality work in long run.
+        </motion.p>
+      </div>
+
+
 
       <div className="mt-20 flex flex-wrap gap-7">
         {projects.map((project, index) => (
