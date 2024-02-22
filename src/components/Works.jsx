@@ -7,7 +7,6 @@ import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { AiOutlineLink } from "react-icons/ai";
-import { works } from "../constants/index";
 const ProjectCard = ({ index, name, description, tags, image, source_code_link, status, web_link }) => {
   return (
     <>
@@ -82,16 +81,6 @@ const Works = () => {
         This approach will help me become a good software engineer and delivering quality work in long run.
       </motion.p>
 
-      {/* {works.map((work) => (
-        <>
-          {work.description.map((point) => (
-            <div className="w-full flex-col gap-y-2 py-2">
-
-            </div>
-          ))}
-        </>
-
-      ))} */}
 
       <div className="mt-20 flex flex-wrap gap-7">
         {projects.map((project, index) => (
