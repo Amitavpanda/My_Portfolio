@@ -66,10 +66,12 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
 const Works = () => {
   return (
     <>
+
       <motion.div variants={textVariant()} id="work">
         <p className={styles.sectionSubText}>My Work</p>
         <h2 className={styles.sectionHeadText}>Projects</h2>
       </motion.div>
+
 
 
       <div className="w-full flex-col gap-y-2 py-2">
@@ -84,6 +86,18 @@ const Works = () => {
         </motion.p>
       </div>
 
+
+      
+      {works.map((work) => (
+        <>
+          {work.description.map((point) => (
+            <div className="w-full flex-col gap-y-2 py-2">
+              <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
+                {point}
+              </motion.p>
+            </div>
+          ))}
+        </>
 
 
       <div className="mt-20 flex flex-wrap gap-7">
