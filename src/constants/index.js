@@ -356,12 +356,9 @@ const projects = [
   {
     name: "Ganna Suno",
 
-    description: [
-      "A music player web app using React, Redux Toolkit and Firebase. Utilized RTK Query and Rapid API to fetch song details and related artist information.",
-      "Implemented user authentication, allowing users to sign in with Google and email/password.",
-      "Created a seamless user experience by enabling users to view song details, play songs, and like them.",
-      "Will be adding some new unique features which will add some value to the audience and need to fix some bugs and security issues."
-    ],
+    description: 
+      "A music player web app using React, Redux Toolkit and Firebase. Utilized RTK Query and Rapid API to fetch song details and related artist information. Implemented user authentication, allowing users to sign in with Google and email/password. Created a seamless user experience by enabling users to view song details, play songs, and like them. Will be adding some new unique features which will add some value to the audience and need to fix some bugs and security issues."
+    ,
 
     tags: [
       {
@@ -395,13 +392,9 @@ const projects = [
 
   {
     name: "Event Management Web App",
-    description: [
-      "There is a requirement from a client to build a Full Stack Event Management Web app for his business.",
-      "The web app allows users to view the services offered by the event management group, book events, and visualize how their events may look through images.",
-      "I handled everything from designing to development to deployment.",
-      "I maintained clean and secure code in both the frontend and backend, implementing form validation using Zod to enhance data integrity and security.",
-      "Will Fix Bugs if raised by client"
-    ],
+    description: 
+      "There is a requirement from a client to build a Full Stack Event Management Web app for his business. The web app allows users to view the services offered by the event management group, book events, and visualize how their events may look through images. I handled everything from designing to development to deployment. I maintained clean and secure code in both the frontend and backend, implementing form validation using Zod to enhance data integrity and security. Will Fix Bugs if raised by client"
+    ,
 
     tags: [
       {
@@ -440,11 +433,9 @@ const projects = [
 
   {
     name: "My Portfolio Web App",
-    description: [
-      "My portfolio, built using React, Tailwind CSS, and Framer Motion, boasts an outstanding UI.It showcases my skills, experience, services, projects, and features a contact form for easy communication.",
-      "I've made a conscious effort to adhere to clean code principles and maintain a structured folder organization in line with industry standards.",
-      "Additionally, Will be doing future updates and improvements based on my evolving requirements."
-    ],
+    description: 
+      "My portfolio, built using React, Tailwind CSS, and Framer Motion, boasts an outstanding UI.It showcases my skills, experience, services, projects, and features a contact form for easy communication. I've made a conscious effort to adhere to clean code principles and maintain a structured folder organization in line with industry standards. Additionally, Will be doing future updates and improvements based on my evolving requirements."
+    ,
 
     tags: [
       {
