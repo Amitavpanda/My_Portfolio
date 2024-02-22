@@ -35,12 +35,9 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
           </div>
           <div className="mt-5">
             <h3 className="font-bold text-white text-[25px]">{name}</h3>
-            {description.map((point) => (
-              <>
-                <p className="mt-2 text-secondary text-[15px]">{point}</p>
-              </>
 
-            ))}
+                <p className="mt-2 text-secondary text-[15px]">{description}</p>
+
           </div>
 
           <div className=" mt-4 flex  items-center justify-between">
