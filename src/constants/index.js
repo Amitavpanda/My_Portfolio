@@ -385,7 +385,7 @@ const projects = [
     image: gannaCover,
     source_code_link: "https://github.com/Amitavpanda/Music_player_ganna_suno",
     status: false,
-    web_link: "https://ganna-sunno.web.app/"
+    web_link: "https://ganna-sunno.netlify.app/"
 
 
   },
