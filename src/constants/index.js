@@ -310,9 +310,9 @@ const experiences = [
     company_name: "ALLD TECHNOLOGY",
     icon: softwareDeveloper1,
     iconBg: "#E6DEDD",
-    date: "March 2022 – July 2022`",
+    date: "March 2022 – Jan 2023`",
     points: [
-      "Collaborated on the development of a data management tool.",
+      "Collaborated on the development of a data management tool and employee management web app.",
       "Built a user-friendly dashboard for a client. Created functional features like a paginated orders table and a searchable employees table.",
       "Used React library to craft attractive and informative graphs for better data visualization. Integrated an editor component to improve userinteraction within the dashboard.",
       "Utilized Redux Toolkit, React, and TypeScript to create a responsive and intuitive userinterface.",
