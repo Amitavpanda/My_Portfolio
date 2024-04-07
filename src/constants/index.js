@@ -115,7 +115,7 @@ export const navLinks = [
 const introduction = [
   {
     overview: [
-      "Hi, Myself a Skilled Software Engineer with more than 2 years of Industry experience and skilled in variety of coding languages and frameworks. I can build full stack performant web apps everything from scratch.",
+      "Hi, Myself a Skilled Software Engineer with more than 1.5 years of Industry experience and skilled in variety of coding languages and frameworks. I can build full stack performant web apps everything from scratch.",
       "With the industry experience I gained in these years enable me to write clean and secure code.  I have experience in frontend development and Backend microservices Architecture." ,
       "I have encountered a diverse range of technologies and frameworks which allow me to quickly learn and master new technologies and tools as per the requirement. ",
       "My Tech Stack and Experience include:",
@@ -139,7 +139,7 @@ const introduction = [
 
       {
         title: 'Tools',
-        skills: ["Linux", "Postman", "Visual Studio Code", "IntellIJ", "Git"]
+        skills: ["Linux", "Postman", "Visual Studio Code", "IntellIJ", "Git", "Docker", "Kafka"]
 
       }
 
@@ -296,7 +296,7 @@ const experiences = [
     company_name: "COMVIVA",
     icon: softwareDeveloper,
     iconBg: "#383E56",
-    date: "March 2022 - July 2022",
+    date: "July 2023 - Present",
     points: [
       "Contributing to the microservice architecture of a dynamic banking application.",
       "Resolved critical production-level issues reported by clients through thorough analysis of logs and extensive examination of the codebase which improved my problem solving skills drastically",
@@ -310,7 +310,7 @@ const experiences = [
     company_name: "ALLD TECHNOLOGY",
     icon: softwareDeveloper1,
     iconBg: "#E6DEDD",
-    date: "March 2022 – Jan 2023`",
+    date: "March 2022 – Jan 2023",
     points: [
       "Collaborated on the development of a data management tool and employee management web app.",
       "Built a user-friendly dashboard for a client. Created functional features like a paginated orders table and a searchable employees table.",
