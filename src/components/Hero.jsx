@@ -81,7 +81,7 @@ const Hero = () => {
             ))}
           </div>
           <motion.button whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }} className='mt-5 rounded-xl  bg-[#915EFF] text-white font-bold p-2 px-5' onClick={() => window.open("https://drive.google.com/file/d/1QZikBgQZkoWCqOzqDAV0XZdLLvotaXE7/view?usp=sharing")}>See my Resume</motion.button>
+            whileTap={{ scale: 0.9 }} className='mt-5 rounded-xl  bg-[#915EFF] text-white font-bold p-2 px-5' onClick={() => window.open("https://drive.google.com/file/d/1S0ALaH9UIDGf3AyJGJsWfZkINnD5Pf8T/view")}>See my Resume</motion.button>
         </div>
 
         <div>
