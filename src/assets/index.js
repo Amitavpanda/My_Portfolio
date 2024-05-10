@@ -51,6 +51,7 @@ import EventManagementCover from "./EventManagementCover.png";
 import MyPortfolio from "./myPortfolio.png";
 import NextJs from "./nextjs.png";
 import OracleDB from "./oracle-db.png";
+import DesiChatPata from "./desiChatpata.jpeg"
 
 export {
   logo,
@@ -102,5 +103,6 @@ export {
   MyPortfolio,
   docker,
   NextJs,
-  OracleDB
+  OracleDB,
+  DesiChatPata
 };

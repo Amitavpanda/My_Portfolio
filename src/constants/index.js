@@ -36,7 +36,8 @@ import {
   NextJs,
   docker,
   mongodb,
-  OracleDB
+  OracleDB,
+  DesiChatPata
 } from "../assets";
 import { IoCallSharp } from "react-icons/io5";
 import { BiLogoGmail } from "react-icons/bi";
@@ -128,12 +129,12 @@ const introduction = [
       },
       { 
         title: 'Backend',
-        skills: ["Java", "Node.js"],
+        skills: ["Java", "Node.js", "Python", "Spring Boot"],
 
       },
       { 
         title: 'Database',
-        skills: ["MongoDB", "Oracle DB", "Firebase"],
+        skills: ["MongoDB", "Oracle DB", "Firebase", "Postgres", "Prisma"],
 
       },
 
@@ -298,12 +299,12 @@ const experiences = [
     iconBg: "#383E56",
     date: "July 2023 - Present",
     points: [
-      "Contributing to the microservice architecture of a dynamic banking application.",
+      "Contributing to the design, development, and optimization of microservices architecture for a dynamic financial application (Mobiquity Pay)",
       "Resolved critical production-level issues reported by clients through thorough analysis of logs and extensive examination of the codebase which improved my problem solving skills drastically",
-      "Upon identifying the issue, I provide a detailed Root Cause Analysis (RCA) and proceed to implement the necessary fixes. Additionally, I document each fix comprehensively in Confluence to maintain a record of the changes made.",
-      "Whether it's adding new features, optimizing existing functionalities, or enhancing performance, I ensure that the changes are seamlessly integrated into the microservices architecture while maintaining high standards of code quality and security.",
+      "Additionally, I played a key role in enhancing the user interface of the payment application dashboard by adding new microfrontend components.",
+      "Designed and implemented complex features integrating third-party APIs, utilizing various design patterns and optimizations to ensure clear, scalable, and maintainable code.",
     ],
-    tech: ["Spring Boot", "Kafka", "Oracle Database", "Docker", "Grafana", "Linux",]
+      tech: ["Spring Boot", "Kafka", "Oracle Database", "Docker", "Grafana", "Linux", "Javascript", "React","Nginx", "Postgres"]
   },
   {
     title: "Software Development Engineer Intern",
@@ -352,41 +353,52 @@ const works = [
 
 const projects = [
 
-
   {
-    name: "Ganna Suno",
-
+    name: "DesiChatpata - Food Ordering Web app with admin dashboard",
     description: 
-      "A music player web app using React, Redux Toolkit and Firebase. Utilized RTK Query and Rapid API to fetch song details and related artist information. Implemented user authentication, allowing users to sign in with Google and email/password. Created a seamless user experience by enabling users to view song details, play songs, and like them. Will be adding some new unique features which will add some value to the audience and need to fix some bugs and security issues."
-    ,
+      " Developing a full-stack food ordering web application with an integrated admin dashboard for business purpose. Utilizing TurboRepo Architecture for efficient system design. Implementing role-based authentication to manage user access. Integrating payment functionalities for seamless transactions. Admin dashboard allows for product and category management, sales visualization, and order processing. Users can browse products, add items to cart, and complete purchases. Currently in progress",
 
     tags: [
       {
-        name: "reactjs",
+        name: "Nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "tailwind css",
+        name: "Tailwind CSS",
         color: "green-text-gradient",
       },
       {
-        name: "redux toolkit",
+        name: "Shadcn",
         color: "pink-text-gradient",
       },
       {
-        name: "rapid api",
+        name: "PostgresSql",
         color: "blue-text-gradient",
       },
       {
-        name: "firebase",
+        name: "Prisma",
         color: "green-text-gradient",
       },
-    ],
-    image: gannaCover,
-    source_code_link: "https://github.com/Amitavpanda/Music_player_ganna_suno",
-    status: false,
-    web_link: "https://ganna-sunno.netlify.app/"
+      {
+        name: "NodeJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "TurboRepo",
+        color: "blue-text-gradient",
+      },
 
+
+    ],
+
+    image: DesiChatPata,
+    source_code_link: "https://github.com/Amitavpanda/desichatpata",
+    status: false,
+    web_link: ""
 
   },
 
@@ -458,6 +470,10 @@ const projects = [
     status: true,
     web_link: "https://my-portfolio-amitav.vercel.app/"
   },
+
+
+
+
 
 
 ];
